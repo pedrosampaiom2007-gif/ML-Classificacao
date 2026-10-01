@@ -24,9 +24,4 @@ O código está no notebook [`classificacao_aneel.ipynb`](classificacao_aneel.ip
 
 `pandas`, `numpy`, `matplotlib`, `seaborn` e `scikit-learn`.
 
-## Ajustes em relação ao código original
 
-Ao passar o código para o notebook, corrigi dois detalhes:
-
-- O `train_test_split` devolve `x_train, x_test, ...` nessa ordem. No código original os nomes estavam trocados, então o modelo treinava com os 20% e testava com os 80%. Agora está certo.
-- Nos gráficos, os nomes das fontes nos eixos usavam `y.unique()`, que não segue a mesma ordem da matriz de confusão. Troquei por `sorted(y.unique())` para os rótulos ficarem corretos.
